@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="class.css">
+<link rel="stylesheet" href="class2.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<!-- CARDS -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="product-grid">
+				<div class="product-image">
+					<a href="#">
+						<img class="pic-1" src="photo/Мужской Пиджак.jpg">
+						<img class="pic-2" src="photo/Мужской Пиджак.jpg">
+					</a>
+					<span class="product-trend-label">Trend</span>
+					<ul class="social">
+						<li><a onclick="openPopup('Мужской Пиджак')" href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+						<li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+						<li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+						<li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+					</ul>
+				</div>
+				<div class="product-content">
+					<h3 class="title"><a href="#">Мужской Пиджак</a></h3>
+					<div class="price">3 999 руб.</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<div class="product-grid">
+				<div class="product-image">
+					<a href="#">
+						<img class="pic-1" src="photo/Женский топ.jpg">
+						<img class="pic-2" src="photo/Женский топ.jpg">
+					</a>
+					<span class="product-trend-label">Trend</span>
+					<span class="product-discount-label">-25%</span>
+					<ul class="social">
+						<li><a onclick="openPopup('Женский топ')" href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+						<li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+						<li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+						<li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+					</ul>
+				</div>
+				<div class="product-content">
+					<h3 class="title"><a href="#">Женский топ</a></h3>
+					<div class="price discount"><span>2 999 руб.</span> 2 249.25руб.</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<div class="product-grid">
+				<div class="product-image">
+					<a href="#">
+						<img class="pic-1" src="photo/Свитшот.jpg">
+						<img class="pic-2" src="photo/Свитшот.jpg">
+					</a>
+					<span class="product-trend-label">Trend</span>
+					<ul class="social">
+						<li><a onclick="openPopup('Свитшот')" href="#" data-tip="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+						<li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+						<li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+						<li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+					</ul>
+				</div>
+				<div class="product-content">
+					<h3 class="title"><a href="#">Свитшот</a></h3>
+					<div class="price">1 999 руб.</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<div class="product-grid">
+				<div class="product-image">
+					<a href="#">
+						<img class="pic-1" src="photo/Джемпер.jpg">
+						<img class="pic-2" src="photo/Джемпер.jpg">
+					</a>
+					<span class="product-trend-label">Trend</span>
+					<ul class="social">
+						<li><a onclick="openPopup('Джемпер')" href="#" data-tip="Add to Cart" data-product-name="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
+						<li><a href="#" data-tip="Wishlist"><i class="far fa-heart"></i></a></li>
+						<li><a href="#" data-tip="Compare"><i class="fas fa-random"></i></a></li>
+						<li><a href="#" data-tip="Quick View"><i class="fas fa-search"></i></a></li>
+					</ul>
+				</div>
+				<div class="product-content">
+					<h3 class="title"><a href="#">Джемпер</a></h3>
+					<div class="price">6 499 руб.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- POPUP -->
+<div class="popup-black" style="display: none">
+	<div class="popup">
+		<a class="popup-close" href="#">❌</a>
+		<div class="page">
+			<form class="js-form" action="" novalidate >
+				<div class="form__group">
+					<input type="text" class="input js-input js-input-first-name" name="name" placeholder="Имя"  >
+				</div>
+				<div class="form__group">
+					<input type="text" class="input js-input js-input-product" name="product" placeholder="Товар" disabled  >
+				</div>
+				<div class="form__group">
+					<input type="tel" class="input js-input js-input-phone" name="phone" placeholder="Phone" >
+				</div>
+				<div class="form__group">
+					<input type="checkbox" class="checkbox__input js-input-checkbox" id="privacy_check">
+					<label class="checkbox__label" for="privacy_check">Согласен на обработку персональных данных</label>
+				</div>
+				<button class="btn" type="submit">
+					Заказать
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="app.js"></script>
+	<script src="fu.js"></script>
+
+	
+</body>
+</html>
