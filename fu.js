@@ -41,10 +41,10 @@ form.onsubmit = function (e) {
 	} else {
 		inputPhone.classList.remove('error');
 	}
-		if (!validateFirstName(firstNameVal)) {
+	if (!validateFirstName(firstNameVal)) {
 		console.log('first name not valid');
 		inputFirstName.classList.add('error');
-		return false;
+	return false;
 	} else {
 		inputFirstName.classList.remove('error');
 	}
