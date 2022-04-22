@@ -24,7 +24,7 @@ $(document).ready(function($) {
 	});
 });
 
-	function openPopup(name){
-		$('.popup-black').fadeIn();
-		$('.js-input-product').val(name);
-	}
+function openPopup(name){
+	$('.popup-black').fadeIn();
+	$('.js-input-product').val(name);
+}
